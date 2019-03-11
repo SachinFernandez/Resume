@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ~~~~~ HEADER ~~~~~ */
+.profileImage {
+    width: 175px;
+}
+
+.profileName {
+    font-family: 'Caveat', cursive;
+    font-size: 3rem;
+}
+
+.profileLink {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+
+a.contactItems {
+    border-bottom: 2px dashed;
+    padding-bottom: 2px;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #0d76ec;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.profileContactItems {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    font-style: normal;
+    font-size: 0.8rem;
+}
+
+.workContainer {
+    margin-left: 0.5rem;
+}
+
+@media print {
+    .printWidthContact {
+        flex: 0 0 41.666667% !important;
+        max-width: 41.666667% !important;
+    }
+
+    .workItems {
+        margin-left: 2rem !important;
+        width: 100%
+    }
+
+    .profileImage {
+        margin-left: -1.5rem !important;
+    }
+
+    .workTitle {
+        margin-left: 1.7rem;
+    }
+}
