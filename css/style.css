@@ -54,11 +54,61 @@ a.contactItems {
     margin-left: -15px;
 }
 
-/* ***** ABOUT-ME SECTION ***** */
+/* ***** Carrer Objective SECTION ***** */
 
 .interperosonalTitle {
     font-family: Verdana, Geneva, sans-serif;
     font-weight: 600;
+}
+
+/* ***** Education Section ***** */
+
+.timeline {
+    border-left: 0.1rem solid #1976D2;
+    position: relative;
+    padding: 0rem 0 0rem 3rem;
+}
+
+.timelineBox {
+    margin-bottom: 0.5rem;
+    padding: 0rem 1rem;
+    position: relative;
+    border: 0.1rem solid #2196F3;
+    transition: border-color .4s ease-out;
+    margin-left: -10px;
+}
+
+.timelineBox:before {
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    left: -2.8rem;
+}
+
+.timelineBox:before,
+.timelineBox:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-color: #2196F3;
+    transition: background-color .4s ease-out;
+}
+
+.timelineBox:after {
+    width: 2.2rem;
+    height: 0.1rem;
+    left: -2.3rem;
+}
+
+.timelineCaption {
+    display: block;
+    margin-top: .3rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2196F3;
 }
 
 @media print {
