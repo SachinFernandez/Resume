@@ -180,6 +180,66 @@ a.contactItems {
     left: 90%;
 }
 
+.techTag {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    border-radius: 5px;
+    margin-right: 1rem;
+    background-color: #e9ecef;
+    border-left-width: 5px;
+    border-left-style: solid;
+    margin-top: 10px;
+}
+
+.techTag_blue {
+    border-color: #17a2b8;
+}
+
+.techTag_yellow {
+    border-color: #ffc107;
+}
+
+.skillsTags {
+    margin-top: 1rem;
+}
+
+.techTag_green {
+    border-color: green;
+}
+
+.techItem {
+    position: relative;
+    padding-left: 2.5rem;
+    margin-right: 1rem;
+}
+
+.techItem:before {
+    content: "";
+    width: 1.5rem;
+    height: 3px;
+    position: absolute;
+    top: 60%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.techItem,
+.techTag {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.techItem_basic:before {
+    background-color: #17a2b8;
+}
+
+.techItem_positive:before {
+    background-color: #ffc107;
+}
+
+.techItem_perfect:before {
+    background-color: #28a745;
+}
 @media print {
     .printWidthContact {
         flex: 0 0 41.666667% !important;
