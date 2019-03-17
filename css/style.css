@@ -111,6 +111,75 @@ a.contactItems {
     color: #2196F3;
 }
 
+/* ***** Skill Section ***** */
+
+.skillName {
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    display: block;
+    margin-top: 2.5px;
+}
+
+.progress {
+    display: flex;
+    height: 2rem;
+    overflow: hidden;
+    background-color: #e9ecef;
+    border-radius: 0.55rem;
+}
+
+.skillBar{
+	height: 2rem;
+    color: white;
+    text-indent: -9999px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skillLevels {
+    position: relative;
+    height: 2.5rem;
+    font-size: 1.3rem;
+}
+
+.skillLevel {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    font-size: 15px;
+}
+
+.skillLevel:first-child {
+    left: 10%;
+}
+
+.skillLevel:before {
+    content: "";
+    width: 2px;
+    height: 48%;
+    background-color: white;
+    position: absolute;
+    top: -1.6rem;
+    left: 0;
+}
+
+.skillLevel:nth-child(2) {
+    left: 30%;
+}
+
+.skillLevel:nth-child(3) {
+    left: 50%;
+}
+
+.skillLevel:nth-child(4) {
+    left: 70%;
+}
+
+.skillLevel:last-child {
+    left: 90%;
+}
+
 @media print {
     .printWidthContact {
         flex: 0 0 41.666667% !important;
